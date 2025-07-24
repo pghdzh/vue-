@@ -8,10 +8,16 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "starView",
-      component: () => import("@/views/starView/index.vue"),
+      component: () => import("@/views/page1/index.vue"),
     },
-   
+    {
+      path: "/page2",
+      component: () => import("@/views/page2/index.vue"),
+    },
+    {
+      path: "/page3",
+      component: () => import("@/views/page3/index.vue"),
+    },
   ],
   scrollBehavior() {
     return { top: 0 };

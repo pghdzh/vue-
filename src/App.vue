@@ -1,6 +1,7 @@
 <template>
   <div id="app">
 
+    <navbar />
 
     <main class="main-content">
       <RouterView />
@@ -11,7 +12,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { RouterView } from 'vue-router'
-
+import navbar from './components/navbar.vue';
 </script>
 
 <style scoped>
@@ -19,7 +20,4 @@ import { RouterView } from 'vue-router'
   position: relative;
   min-height: 100vh;
 }
-
-
-
 </style>
